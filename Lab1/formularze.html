@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tworzenie formularzy</title>
+</head>
+<body>
+<div id="kontener">
+    <div id="baner">
+        <h2>Szybki kurs HTML</h2>
+    </div>
+    <div id="menu">
+        <a href="index.html">Podstawowe znaczniki</a>
+        <a href="tabele.html">Tworzenie tabel</a>
+        <a href="formularze.html">Budowa formularzy</a>
+    </div>
+    <div id="tresc">
+        <h3>Podstawowe znaczniki formularza HTML to:</h3>
+        <ul>
+            <li> &lt;form&gt; - znacznik podstawowy zawierający pola formularza</li>
+            <li> &lt;input&gt; - znacznik umożliwia wstawienie różnych pól (pole tekstowe, przycisk typu radio, przycisk
+                typu checkbox) w zależności od wartości jego atrybutu type
+            </li>
+            <li> &lt;select&gt; - pole formularza typu lista rozwijana</li>
+            <li> &lt;textarea&gt; - pole formularza typu obszar tekstowy</li>
+            <li> &lt;button&gt; - pole formularza typu przycisk</li>
+        </ul>
+        <h3>Przykładowy formularz HTML:</h3>
+        <form action="mailto:s95408@pollub.edu.pl" method="post">
+            <table>
+                <tr>
+                    <td><label for="surname">Nazwisko:</label></td>
+                    <td><input type="text" name="surname" id="surname" required></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Wiek:</label></td>
+                    <td><input type="text" name="age" id="age" required></td>
+                </tr>
+                <tr><td><label for="country">Państwo:</label> </td>
+                    <td><select id="country" name="country">
+                        <option value="pl">Polska</option>
+                        <option value="de">Niemcy</option>
+                        <option value="fr">Francja</option>
+                    </select></td></tr>
+                <tr>
+                    <td><label for="email">Adres e-mail:</label></td>
+                    <td><input type="email" name="email" id="email"
+                               required></td></tr>
+            </table>
+            <h4>Zamawiam tutorial z języka:</h4>
+            <input type="checkbox" name="language" value="PHP" id="php"> <label for="php"> PHP </label>
+            <input type="checkbox" name="language" value="C" id="cpp"> <label for="cpp"> C/C++ </label>
+            <input type="checkbox" name="language" value="Java" id="java"> <label for="java"> Java </label>
+            <h4>Sposób zapłaty:</h4>
+            <input type="radio" name="payment" value="mastercard" id="mastercard"> <label for="mastercard">
+            Mastercard </label>
+            <input type="radio" name="payment" value="visa" id="visa"> <label for="visa"> Visa </label>
+            <input type="radio" name="payment" value="transfer" id="transfer"> <label for="transfer">Przelew
+            bankowy</label><br><br>
+            <input type="submit" value="Wyślij">
+            <input type="reset" value="Anuluj">
+        </form>
+    </div>
+    <div id="stopka"><p> &copy;CG</p></div>
+</div>
+</body>
+</html>
