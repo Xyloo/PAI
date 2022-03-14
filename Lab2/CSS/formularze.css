@@ -1,15 +1,19 @@
-body {
+body
+{
     font-family: "Open Sans", sans-serif;
 }
 
-form {
+form
+{
     margin-left: 15px;
 }
 
-label {
+label
+{
     font-weight: 600;
 }
 
-input {
+input
+{
     padding: 2px 10px;
 }

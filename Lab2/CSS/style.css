@@ -1,23 +1,28 @@
-h1, h2, h3 {
-    margin: 0;
+h1, h2, h3
+{
+    margin:  0;
     padding: 0;
 }
 
-body {
+body
+{
     background: #4ae;
-    color: #000040;
+    color:      #000040;
 }
 
-h1, h2, #stopka {
+h1, h2, #stopka
+{
     background: #000040;
-    color: #8080ff;
+    color:      #8080ff;
     text-align: center;
 }
 
-#menu {
+#menu
+{
     background: white;
 }
 
-#tresc {
+#tresc
+{
     background: lightblue;
 }
