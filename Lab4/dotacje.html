@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dotacja</title>
+</head>
+<body>
+<h2>Formularz dotacji</h2>
+<form action="#" method="post">
+    <fieldset>
+        <label for="beneficjent">Beneficjent: </label>
+        <input type="text" required id="beneficjent" name="beneficjent" title="Wybierz beneficjenta z listy." list="lista-beneficjentow">
+        <datalist id="lista-beneficjentow">
+            <option value="SOS Wioski Dziecięce">
+            <option value="Fundacja Fuga Mundi">
+            <option value="Fundacja ITAKA">
+            <option value="Fundacja Dajemy Dzieciom Siłę">
+        </datalist><br>
+        <label for="kwota">Wielkość dotacji: </label>
+        <input type="number" required min="20" title="Minimalna wartość dotacji to 20 zł." step="5" id="kwota" name="kwota">zł
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Dane karty płatniczej</legend>
+        Karta: <input type="radio" name="karta" id="visa" value="visa"> <label for="visa">Visa</label>
+        <input type="radio" name="karta" id="mastercard" value="mastercard"> <label for="mastercard">Mastercard</label> <br>
+        <label for="numer-karty">Numer: </label> <input type="text" required id="numer-karty" title="Numer karty musi składać się z 16 lub 13 cyfr." name="numer-karty" pattern="\d{16}|\d{13}"><br>
+        <label for="data-waznosci">Data ważności:</label> <input type="month" required id="data-waznosci" title="Wybierz datę ważności." name="data-waznosci"><br>
+        <label for="cvv">Kod CVV:</label> <input type="text" required id="cvv" title="Kod CVV musi składać się z 4 lub 3 cyfr. Znajdziesz go na odwrocie karty." name="cvv" pattern="\d{4}|\d{3}">
+    </fieldset>
+    <br>
+    <label for="darczynca">Darczyńca: </label> <input type="text" id="darczynca" name="darczynca" title="Darczyńca musi składać się z co najmniej 3 liter." pattern="[a-zA-Z]{3,}" required>
+    <input type="submit" value="Wyślij">
+</form>
+</body>
+</html>
