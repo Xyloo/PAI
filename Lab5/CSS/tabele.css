@@ -31,7 +31,12 @@ tfoot a
     color: white;
 }
 
-.parzysty
+.fix
+{
+    background: darkblue !important;
+}
+
+tr:nth-of-type(even)
 {
     background: white;
 }
