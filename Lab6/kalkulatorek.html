@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulatorek (ale w JSie)</title>
+    <script src="JS/obliczenia.js"></script>
+</head>
+<body>
+<fieldset>
+    <legend>Kalkulatorek</legend>
+    <table>
+        <tr style="text-align: center; font-weight: bold;">
+            <td>Wpisz liczby:</td>
+            <td>Wskaż działanie:</td>
+        </tr>
+        <tr>
+            <td>X:</td>
+            <td><input id="plus" name="operator" type="radio"><label for="plus">+</label></td>
+        </tr>
+        <tr>
+            <td><input id="firstNumber" type="number"></td>
+            <td><input id="minus" name="operator" type="radio"><label for="minus">-</label></td>
+        </tr>
+        <tr>
+            <td>Y:</td>
+            <td><input id="multiply" name="operator" type="radio"><label for="multiply">*</label></td>
+        </tr>
+        <tr>
+            <td><input id="secondNumber" type="number"></td>
+            <td><input id="divide" name="operator" type="radio"><label for="divide">/</label></td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="kalkulator()">Oblicz</button>
+            </td>
+            <td><label for="result">Wynik:</label><input disabled id="result" type="text"></td>
+        </tr>
+    </table>
+</fieldset>
+</body>
+</html>
