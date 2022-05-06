@@ -39,11 +39,11 @@
             <table>
                 <tr>
                     <td><label for="surname">Nazwisko:</label></td>
-                    <td><input id="surname" name="surname" required type="text"></td>
+                    <td><input id="surname" name="surname" required type="text" pattern="^[^\d\s]*$" placeholder="Kowalski"></td>
                 </tr>
                 <tr>
                     <td><label for="age">Wiek:</label></td>
-                    <td><input id="age" min="1" name="age" required type="number"></td>
+                    <td><input id="age" min="1" name="age" required type="number" placeholder="18"></td>
                 </tr>
                 <tr>
                     <td><label for="country">Państwo:</label></td>
@@ -55,8 +55,7 @@
                 </tr>
                 <tr>
                     <td><label for="email">Adres e-mail:</label></td>
-                    <td><input id="email" name="email" required
-                               type="email"></td>
+                    <td><input id="email" name="email" required type="email" placeholder="jan@kowalski.pl"></td>
                 </tr>
             </table>
             <h4>Zamawiam tutorial z języka:</h4>
@@ -71,6 +70,24 @@
             <input type="reset" value="Anuluj">
         </form>
     </section>
+    <aside>
+        <div class="box">
+            <h3>Walidatory: </h3>
+            <ul>
+                <li><a href="https://validator.w3.org/">HTML</a></li>
+                <li><a href="https://jigsaw.w3.org/css-validator/">CSS</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Kursy:</h3>
+            <ul>
+                <li><a href="https://www.w3schools.com/html/"> HTML </a></li>
+                <li><a href="https://www.w3schools.com/css/"> CSS </a></li>
+                <li><a href="https://www.w3schools.com/js/"> JS </a></li>
+                <li><a href="https://www.w3schools.com/php/"> PHP </a></li>
+            </ul>
+        </div>
+    </aside>
 </main>
 <footer>
     <p> &copy;CG </p>

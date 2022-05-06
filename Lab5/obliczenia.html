@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="CSS/style.css" rel="stylesheet" type="text/css">
+    <title>Obliczenia pożyczki</title>
+    <script src="JS/obliczenia.js"></script>
+</head>
+<body>
+<header>
+    <h2>Szybki kurs HTML</h2>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">Podstawy</a></li>
+        <li><a href="tabele.html">Tabele</a></li>
+        <li><a href="">Formularze</a>
+            <ul>
+                <li><a href="formularze.html">Pola formularza</a></li>
+                <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
+            </ul>
+        </li>
+        <li><a href="galeria.html" title="galeria">Galeria</a></li>
+    </ul>
+</nav>
+<main>
+    <section>
+        <table>
+            <thead><h3>Pożyczka</h3></thead>
+            <tr>
+                <td><label for="kwota">Kwota: </label></td>
+                <td><input id="kwota" min="1" required type="number"></td>
+            </tr>
+            <tr>
+                <td><label for="ilosc">Ile rat: </label></td>
+                <td><input id="ilosc" min="1" required step="1" type="number"></td>
+            </tr>
+            <tr>
+                <td><label for="procent">Procent: </label></td>
+                <td><input id="procent" min="0" required type="number"></td>
+            </tr>
+            <tr>
+                <td><label for="rata">Rata miesięczna: </label></td>
+                <td><input disabled id="rata" type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="total">Kwota z odsetkami: </label></td>
+                <td><input disabled id="total" type="text"></td>
+            </tr>
+            <tr>
+                <td colspan="2" id="button-cell">
+                    <button onclick="oblicz()">Oblicz ratę stałą</button>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <aside>
+        <div class="box">
+            <h3>Walidatory: </h3>
+            <ul>
+                <li><a href="https://validator.w3.org/">HTML</a></li>
+                <li><a href="https://jigsaw.w3.org/css-validator/">CSS</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Kursy:</h3>
+            <ul>
+                <li><a href="https://www.w3schools.com/html/"> HTML </a></li>
+                <li><a href="https://www.w3schools.com/css/"> CSS </a></li>
+                <li><a href="https://www.w3schools.com/js/"> JS </a></li>
+                <li><a href="https://www.w3schools.com/php/"> PHP </a></li>
+            </ul>
+        </div>
+    </aside>
+</main>
+<footer>
+    <p> &copy;CG </p>
+</footer>
+</body>
+</html>

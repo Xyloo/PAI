@@ -1,0 +1,38 @@
+h2
+{
+    color:forestgreen;
+    text-align: center;
+}
+
+body
+{
+    display: block;
+    text-align: center;
+}
+
+form
+{
+    display: inline-block;
+    width: 35%;
+}
+
+fieldset
+{
+    text-align: left;
+}
+
+input[type*="submit"], input[type*="reset"]
+{
+    color:forestgreen;
+    font-weight: bold;
+}
+
+fieldset > *
+{
+    margin: 4px;
+}
+
+.buttons > *
+{
+    margin: 20px 15%;
+}
