@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="CSS/style.css" rel="stylesheet" type="text/css">
+    <link href="CSS/formularze.css" rel="stylesheet" type="text/css">
+    <title>Tworzenie formularzy</title>
+    <script src="JS/walidacja.js"></script>
+</head>
+<body>
+<header>
+    <h2>Szybki kurs HTML</h2>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">Podstawy</a></li>
+        <li><a href="tabele.html">Tabele</a></li>
+        <li><a href="">Formularze</a>
+            <ul>
+                <li><a href="formularze.html">Pola formularza</a></li>
+                <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
+            </ul>
+        </li>
+        <li><a href="galeria.html" title="galeria">Galeria</a></li>
+    </ul>
+</nav>
+<section>
+    <h3>Podstawowe znaczniki formularza HTML to:</h3>
+    <ul>
+        <li> &lt;form&gt; - znacznik podstawowy zawierający pola formularza</li>
+        <li> &lt;input&gt; - znacznik umożliwia wstawienie różnych pól (pole tekstowe, przycisk typu radio, przycisk typu checkbox) w zależności od wartości jego atrybutu type</li>
+        <li> &lt;select&gt; - pole formularza typu lista rozwijana</li>
+        <li> &lt;textarea&gt; - pole formularza typu obszar tekstowy</li>
+        <li> &lt;button&gt; - pole formularza typu przycisk</li>
+    </ul>
+    <h3>Przykładowy formularz HTML:</h3>
+    <form action="mailto:s95408@pollub.edu.pl" method="post" onsubmit="return sprawdz()">
+        <table>
+            <tr>
+                <td><label for="surname">Nazwisko:</label></td>
+                <td><input id="surname" name="surname" required type="text" pattern="^[^\d\s]*$" placeholder="Kowalski"></td>
+                <td id="nazwisko_error" class="czerwone"></td>
+            </tr>
+            <tr>
+                <td><label for="age">Wiek:</label></td>
+                <td><input id="age" min="1" name="age" required type="number" placeholder="18"></td>
+                <td id="wiek_error" class="czerwone"></td>
+            </tr>
+            <tr>
+                <td><label for="country">Państwo:</label></td>
+                <td><select id="country" name="country">
+                    <option value="pl" selected="selected">Polska</option>
+                    <option value="de">Niemcy</option>
+                    <option value="fr">Francja</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="email">Adres e-mail:</label></td>
+                <td><input id="email" name="email" required type="email" placeholder="jan@kowalski.pl"></td>
+                <td id="email_error" class="czerwone"></td>
+            </tr>
+        </table>
+        <h4>Zamawiam tutorial z języka:</h4>
+        <input id="php" name="language" type="checkbox" value="PHP"> <label for="php"> PHP </label>
+        <input id="cpp" name="language" type="checkbox" value="C"> <label for="cpp"> C/C++ </label>
+        <input id="java" name="language" type="checkbox" value="Java"> <label for="java"> Java </label>
+        <p id="produkt_error" class="czerwone"></p>
+        <h4>Sposób zapłaty:</h4>
+        <input id="mastercard" name="payment" type="radio" value="mastercard"> <label for="mastercard">Mastercard </label>
+        <input id="visa" name="payment" type="radio" value="visa"> <label for="visa"> Visa </label>
+        <input id="transfer" name="payment" type="radio" value="transfer"> <label for="transfer">Przelew bankowy</label><br><br>
+        <p id="zaplata_error" class="czerwone"></p>
+        <input type="submit" value="Wyślij">
+        <input type="reset" value="Anuluj">
+    </form>
+</section>
+<footer>
+    <p> &copy;CG </p>
+</footer>
+</body>
+</html>
