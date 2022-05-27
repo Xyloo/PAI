@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="CSS/style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="JS/lightbox.js"></script>
+    <link href="CSS/lightbox.css" rel="stylesheet" type="text/css">
+    <script src="JS/slide.js"></script>
+    <link href="CSS/slide.css" rel="stylesheet" type="text/css">
+    <title>Galeria</title>
+</head>
+<body>
+<div id="kontener">
+    <header>
+        <div id="slideshow">
+            <img src="../Lab3/zdjecia/obraz1.JPG" alt="image1" class="active" />
+            <img src="../Lab3/zdjecia/obraz2.JPG" alt="image2" />
+            <img src="../Lab3/zdjecia/obraz3.JPG" alt="image3" />
+        </div>
+        <h2>Szybki kurs HTML</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Podstawy</a></li>
+            <li><a href="tabele.html">Tabele</a></li>
+            <li><a href="">Formularze</a>
+                <ul>
+                    <li><a href="formularze.html">Pola formularza</a></li>
+                    <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
+                </ul>
+            </li>
+            <li><a href="galeria.html" title="galeria">Galeria</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Galeria zdjęć</h2>
+            <div id="galeria">
+                <a href="../Lab3/zdjecia/obraz1.JPG" data-lightbox="galeria" data-title="Obraz 1" target="_blank"><img alt="obraz1" class="image" src="../Lab3/miniaturki/obraz1.JPG"></a>
+                <a href="../Lab3/zdjecia/obraz2.JPG" data-lightbox="galeria" data-title="Obraz 2" target="_blank"><img alt="obraz2" class="image" src="../Lab3/miniaturki/obraz2.JPG"></a>
+                <a href="../Lab3/zdjecia/obraz3.JPG" data-lightbox="galeria" data-title="Obraz 3" target="_blank"><img alt="obraz4" class="image" src="../Lab3/miniaturki/obraz3.JPG"></a>
+                <a href="../Lab3/zdjecia/obraz4.JPG" data-lightbox="galeria" data-title="Obraz 4" target="_blank"><img alt="obraz5" class="image" src="../Lab3/miniaturki/obraz4.JPG"></a>
+                <a href="../Lab3/zdjecia/obraz5.JPG" data-lightbox="galeria" data-title="Obraz 5" target="_blank"><img alt="obraz3" class="image" src="../Lab3/miniaturki/obraz5.JPG"></a>
+                <a href="../Lab3/zdjecia/obraz6.JPG" data-lightbox="galeria" data-title="Obraz 6" target="_blank"><img alt="obraz6" class="image" src="../Lab3/miniaturki/obraz6.JPG"></a>
+                <a href="../Lab3/zdjecia/obraz7.JPG" data-lightbox="galeria" data-title="Obraz 7" target="_blank"><img alt="obraz7" class="image" src="../Lab3/miniaturki/obraz7.JPG"></a>
+                <a href="../Lab3/zdjecia/obraz8.JPG" data-lightbox="galeria" data-title="Obraz 8" target="_blank"><img alt="obraz8" class="image" src="../Lab3/miniaturki/obraz8.JPG"></a>
+                <a href="../Lab3/zdjecia/obraz9.JPG" data-lightbox="galeria" data-title="Obraz 9" target="_blank"><img alt="obraz9" class="image" src="../Lab3/miniaturki/obraz9.JPG"></a>
+            </div>
+            <div class="gap"></div>
+        </section>
+        <aside>
+            <div class="box">
+                <h3>Walidatory: </h3>
+                <ul>
+                    <li><a href="https://validator.w3.org/">HTML</a></li>
+                    <li><a href="https://jigsaw.w3.org/css-validator/">CSS</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Kursy:</h3>
+                <ul>
+                    <li><a href="https://www.w3schools.com/html/"> HTML </a></li>
+                    <li><a href="https://www.w3schools.com/css/"> CSS </a></li>
+                    <li><a href="https://www.w3schools.com/js/"> JS </a></li>
+                    <li><a href="https://www.w3schools.com/php/"> PHP </a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <p> &copy;CG </p>
+    </footer>
+</div>
+</body>
+</html>
