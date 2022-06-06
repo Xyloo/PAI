@@ -398,7 +398,7 @@ function galeriawypelnij()
     let galeria = "<h1 class='font-weight-light'>Galeria bubbletea.io</h1>";
     for (let i = 1; i <= 12; i++)
     {
-        galeria += "<a href='assets/gallery/picture" + [i] + ".jpg' data-lightbox='gallery' data-title='Obraz " + [i] + "'><img class='p-2 col-lg-3 col-md-4 col-sm-12 col-12 img-thumbnail shadow' src='assets/gallery/thumbnails/picture" + [i] + "_t.JPG' alt='obraz" + [i] + "'/></a>";
+        galeria += "<a href='assets/gallery/picture" + [i] + ".jpg' data-lightbox='gallery' data-title='Obraz " + [i] + "'><img class='p-2 col-lg-3 col-md-4 col-sm-12 col-12 img-thumbnail shadow' src='assets/gallery/thumbnails/picture" + [i] + "_t.jpg' alt='obraz" + [i] + "'/></a>";
     }
     document.getElementById("galeriawyp").innerHTML = galeria;
 }
