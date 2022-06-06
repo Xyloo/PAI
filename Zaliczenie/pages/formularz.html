@@ -1,0 +1,112 @@
+<div class="row align-items-center my-5">
+    <div id="ilosc"></div>
+    <h2 class="font-weight-light">Zaproponuj swoją kompozycję</h2>
+    <div class="form-group">
+        <label for="nazwa">Nazwa:</label>
+        <input class="form-control" id="nazwa" name="nazwa" placeholder="Nazwa kompozycji" type="text">
+        <div class="invalid-feedback">Podana nazwa jest nieprawidłowa (max. 100 znaków)!</div>
+    </div>
+    <div class="form-group">
+        <label for="herbata">Herbata:</label>
+        <select class="form-control" id="herbata" name="herbata" required>
+            <option value="">Wybierz herbatę</option>
+            <option value="Czarna">Czarna</option>
+            <option value="Zielona">Zielona</option>
+            <option value="Oolong">Oolong</option>
+            <option value="Earl Grey">Earl Grey</option>
+        </select>
+        <div class="invalid-feedback">Proszę wybrać herbatę!</div>
+    </div>
+    <div class="form-group">
+        <label for="syrop">Syrop:</label>
+        <select class="form-control" id="syrop" name="syrop" required>
+            <option value="">Wybierz syrop</option>
+            <option value="Wiśnia">Wiśnia</option>
+            <option value="Pomarańcza">Pomarańcza</option>
+            <option value="Winogron">Winogron</option>
+            <option value="Marakuja">Marakuja</option>
+            <option value="Mango">Mango</option>
+            <option value="Liczi">Liczi</option>
+            <option value="Malina">Malina</option>
+            <option value="Cytryna">Cytryna</option>
+        </select>
+        <div class="invalid-feedback">Proszę wybrać syrop!</div>
+    </div>
+    <div class="form-group">
+        <label for="kulki">Kulki:</label>
+        <select class="form-control" id="kulki" name="kulki" required>
+            <option value="">Wybierz kulki</option>
+            <option value="Mango">Mango</option>
+            <option value="Truskawka">Truskawka</option>
+            <option value="Limonka">Limonka</option>
+            <option value="Jagoda">Jagoda</option>
+            <option value="Ananas">Ananas</option>
+            <option value="Wiśnia">Wiśnia</option>
+            <option value="Liczi">Liczi</option>
+            <option value="Kiwi">Kiwi</option>
+        </select>
+        <div class="invalid-feedback">Proszę wybrać kulki!</div>
+    </div>
+    <div class="form-group">
+        <label>Cukier</label>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" name="cukier" type="radio" value="Normalnie">Normalnie
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" name="cukier" type="radio" value="Połowa">Połowa
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" name="cukier" type="radio" value="Bez">Bez
+            </label>
+        </div>
+        <div class="invalid-feedback" id="cukier-blad">Proszę wybrać ilość cukru!</div>
+    </div>
+    <div class="form-group">
+        <label>Lód</label>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" name="lod" type="radio" value="Normalnie">Normalnie
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" name="lod" type="radio" value="Połowa">Połowa
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" name="lod" type="radio" value="Bez">Bez
+            </label>
+        </div>
+        <div class="invalid-feedback" id="lod-blad">Proszę wybrać ilość lodu!</div>
+    </div>
+    <div class="form-group">
+        <label for="uwagi">Dodatkowe uwagi (opcjonalne, max. 2000 znaków):</label>
+        <textarea class="form-control" id="uwagi" maxlength="2000" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="mail">Mail składającego propozycje:</label>
+        <input class="form-control" id="mail" name="mail" placeholder="skladajacy@gmail.com"
+               required type="email">
+        <div class="invalid-feedback">Podany mail jest niepoprawny!</div>
+    </div>
+    <div class="form-group">
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" id="zgoda" type="checkbox" value="tak">Czy zgadzasz
+                się na wysyłanie maili pod tego emaila?
+            </label>
+            <div class="invalid-feedback" id="potwierdzenie-blad">Proszę zaznaczyć checkbox!</div>
+        </div>
+    </div>
+    <p></p>
+    <input class="btn btn-primary col-lg-6" onclick="przeslij()" type="button" value="Zaproponuj">
+    <input class="btn btn-secondary col-lg-6" onclick="usuniecie()" type="button" value="Reset">
+</div>
+
+

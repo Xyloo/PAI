@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+    <meta content="Projekt końcowy - zaliczenie z PAI" name="description"/>
+    <meta content="Cezary Gozdalski" name="author"/>
+    <title>Cezary Gozdalski - Projekt</title>
+    <!-- Favicon-->
+    <link href="assets/favicon.ico" rel="icon" type="image/x-icon"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet"/>
+    <link href="css/lightbox.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body onload="ilosc(1);">
+<div class="d-flex" id="wrapper">
+    <!-- Sidebar-->
+    <div class="border-end bg-white" id="sidebar-wrapper">
+        <div class="sidebar-heading border-bottom bg-light" onclick="location.reload()">bubbletea.io</div>
+        <div class="list-group list-group-flush">
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!" id="herbaty">Herbaty</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!" id="boba">Kulki Boba</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!" id="propozycja">Zaproponuj nową
+                kompozycję</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!" id="lista">Lista kompozycji</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!" id="galeriamenu">Galeria</a>
+        </div>
+        <div class="container py-3 bg-light border-top border-bottom">
+            <p class="m-0 text-center text-black">Copyright &copy; CG 2022</p>
+        </div>
+    </div>
+    <!-- Page content wrapper-->
+    <div id="page-content-wrapper">
+        <!-- Top navigation-->
+        <nav class="navbar navbar-expand navbar-light bg-light border-bottom">
+            <div class="container-fluid">
+                <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
+                <div class="navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <li class="nav-item active"><a class="nav-link" href="#!" onclick="location.reload();">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://validator.w3.org/"
+                                                target="_blank">Walidator HTML</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://jigsaw.w3.org/css-validator/"
+                                                target="_blank">Walidator CSS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page content-->
+        <div class="container" id="mainPage">
+            <div class="row align-items-center my-5">
+                <div class="col-lg-7">
+                    <div class="carousel slide" data-ride="carousel" id="przykladowaKaruzela">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img alt="Pierwszy slajd" class="d-block w-60 img-fluid" height="400" src="assets/gallery/picture7.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img alt="Drugi slajd" class="d-block w-60 img-fluid" height="400" src="assets/gallery/picture9.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img alt="Trzeci slajd" class="d-block w-60 img-fluid" height="400" src="assets/gallery/picture11.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container p-2 my-2 col-lg-5">
+                    <h1 class="font-weight-light">Witamy na bubbletea.io</h1>
+                    <p>Na bubbletea.io możesz sprawdzić istniejącą ofertę, a także zaproponować nowe kompozycje bubble tea.</p>
+                </div>
+                <div class="col">
+                    <div class="container p-3 my-3 bg-info text-white col-lg-6 col-md-9 mx-auto shadow">
+                        <h3 class="font-weight-light ">Podoba się to co widzisz?</h3>
+                        <button class="btn btn-success" id="galeria" type="button">Zapraszamy do galerii!</button>
+                    </div>
+                    <div class="container p-3 my-3 bg-info text-white col-lg-6 col-md-9 mx-auto shadow">
+                        <h3 class="font-weight-light ">Chcesz zaproponować kompozycję?</h3>
+                        <div id="ilosc"></div>
+                        <button class="btn btn-success" id="propozycjamain" type="button">Zaproponuj tutaj!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<!-- Moj JS-->
+<script src="js/custom.js"></script>
+<script src="js/lightbox.js"></script>
+</body>
+</html>
